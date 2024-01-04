@@ -1,5 +1,6 @@
-text = 'Hello Zaira'
-custom_key = 'python'
+text = 'mrttaqrhknsw ih puggrur'
+# custom_key = 'python'
+custom_key = 'happycoding'
 
 def vigenere(message, key, direction=1):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
@@ -21,7 +22,17 @@ def vigenere(message, key, direction=1):
             final_message += alphabet[new_index]
     return final_message
 
-encryption = vigenere(text, custom_key)
-decryption = vigenere(encryption, custom_key, -1)
-print(encryption)
-print(decryption)
+def encrypt(message, key):
+    #The pass keyword can be used as a placeholder for future code. It does not have any effect in your code but it can save you from errors you would get in case of incomplete code
+    pass
+    return vigenere(message, key)
+
+def decrypt(message, key):
+    return vigenere(message, key, -1)
+
+encryption = encrypt(text, custom_key)
+decryption = decrypt(text, custom_key)
+print(f'criptografada: \n{encryption}')
+print(f'Key: {custom_key}')
+# print("decifrada: " + decryption)
+print(f'decifrada: \n{decryption}')
