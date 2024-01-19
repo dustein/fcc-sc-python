@@ -21,3 +21,17 @@ dicionario4 = { chave: f'{chave.upper()} custa {valor}' for chave, valor in dict
 print(dicionario4)
 
 #---------------------------------------------------------------
+
+animais = {
+  'cao': 'pelos',
+  'pato': 'penas',
+  'nemo': 'escamas',
+  'gato': 'pelos',
+  'galinha': 'penas',
+  'dory': 'escamas'
+}
+
+mamiferos = {
+  chave: 'verificado' for chave, valor in animais.items() if valor == 'penas'
+}
+print(mamiferos)
